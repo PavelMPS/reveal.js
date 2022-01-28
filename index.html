@@ -1,0 +1,147 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>reveal.js</title>
+
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/theme/black.css">
+
+		<!-- Theme used for syntax highlighted code -->
+		<link rel="stylesheet" href="plugin/highlight/monokai.css">
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section>
+				<h4 style="color: rgb(5, 50, 196)">Top 10 UNIX Commands:</h4>				
+					<p style="color: green">1. man</p>
+					<p style="color: green">2. ls</p>
+					<p style="color: green">3. cd, mkdir</p>
+					<p style="color: green">4. rm, rmdir</p>
+					<p style="color: green">5. cp</p>
+					<p style="color: green">6. mv</p>
+					<p style="color: green">7. lynx, netscape</p>
+					<p style="color: green">8. pine, pico</p>
+					<p style="color: green">9. finger. 10. host / dig</p>
+				</section>
+
+				<section>
+					<h3 style="color: rgb(6, 99, 250)">1. "man"	Display Manual Pages</h3>
+					<p>The man command will display the manual pages 
+						for most UNIX commands. For more information 
+						on any of the Unix commands below, use this to see if 
+						there is an online manual page available. 
+						<p>The command syntax for man is:</p>
+
+							<p style="color: green">man commandname</p>
+				</section>
+
+				<section>
+					<h3 style="color: rgb(6, 99, 250)">2. "ls"List the contents of a directory</h3>
+					<p>Use this command to list the contents of the current directory.
+						This will display all files and directories within the current directory in a columnar format.</p>
+						<p>The command syntax for ls is :</p>
+							<p style="color: green">ls [ -aAcCdfFgilLqrstux ] filename</p>
+				</section>
+
+				<section>
+					<h3 style="color: rgb(6, 99, 250)">3. "cd" - Change Directory  and "mkdir" - Make Directory
+					</h3>
+					<p>The "change directory" command is used to switch from one directory to another. </p>
+					<p>The "make directory" command is used to create a new directory.</p>
+					<p>The command syntax:</p>
+					<p style="color: green">cd [directoryname]</p>
+					<p style="color: green">mkdir directoryname </p>
+				</section>
+
+				<section>
+					<h3 style="color: rgb(6, 99, 250)">4. "rm" - Remove files and command
+						"rmdir"	- Remove Directories					
+					</h3>
+					<p>The "remove" command is used to permanently delete your files from your directories.</p>
+					<p>The "remove directory" command is used to delete your directories. </p>
+					<p>The command syntax:
+						<p style="color: green">rm [-fir] filename  </p>
+						<p style="color: green">rmdir directoryname </p>
+				</section>
+
+				<section>
+					<h3 style="color: rgb(6, 99, 250)">5. "cp"	Copy files</h3>
+					<p>The "copy" command is used to make a copy of a file in the same 
+						or a different directory. If copying to the same directory the
+						 filename of the copy must be different. This is useful for making 
+						 backups or working copies of files while leaving the originals alone.</p>
+						 <p>The command syntax for cp is:</p>
+							<p style="color: green">cp [ -ip ] filename1 filename2  </p>
+				</section>
+
+				<section>
+					<h3 style="color: rgb(6, 99, 250)">6. "mv"	Move or Rename Files</h3>
+					<p>The "move" command is used to move or rename files.</p>
+					<p>The command syntax for mv is:</p>
+
+						<p style="color: green">mv [ -fi ] filename1 filename2  </p>
+				</section>
+
+				<section>
+					<h3 style="color: rgb(6, 99, 250)">7. "netscape"and
+						"lynx" Browse Information on the WWW
+					</h3>
+					<p>Netscape and Lynx are two web browsers available on the Unix system.
+						Netscape offers a graphical interface most familiar to browsers on
+						other systems, while Lynx offers a text only browser interface. 
+						Lynx can be useful if you want quick access to information, or are
+						using a text based terminal.</p>
+				</section>
+				
+				<section>
+					<h3 style="color: rgb(6, 99, 250)">8. "pine" and
+						"pico"	email and text editing
+					</h3>
+					<p>Typing pine at the UNIX prompt will start up a simple but effective 
+						text base mail program. Pine allows you to receive, compose, send 
+						and organize e-mail messages, corresponding with anyone around the 
+						world who is connected to the Internet.
+						Messages composed in Pine are editted using a file editor program 
+						called "pico" (for PIne COmposer). </p>
+				</section>
+
+				<section>
+					<h3 style="color: rgb(6, 99, 250)">9. "finger"	Get Information About Someone On Unix</h3>
+					<p>Finger is used to display information about users on UNIX systems.
+						Finger displays a user's full name, last login, and when the user
+						last read their mail. If you wished to find out information about 
+						a user on campus, you would type finger user_name.  </p>
+						<p>The command syntax for finger is:</p>
+
+							<p style="color: green">finger [-mlsqibfwhp] [username]  </p>
+				</section>
+
+				<section>
+					<h3 style="color: rgb(6, 99, 250)">10. "host" and "Dig" - Get Information About a Host Machine</h3>
+					<p>The host and dig commands lets learn about a machines 'host' information.</p>
+				</section>
+			</div>
+		</div>
+
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+				hash: true,
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+			});
+		</script>
+	</body>
+</html>
